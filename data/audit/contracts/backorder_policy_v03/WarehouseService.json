@@ -1,0 +1,42 @@
+{
+  "consumer": "WarehouseService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "outcome": "blocked"
+    },
+    {
+      "outcome": "blocked"
+    },
+    {
+      "outcome": "allowed"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "incoming": 9,
+      "on_hand": 0,
+      "request_id": "TRX-0301-INV",
+      "requested": 8,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "incoming": 2,
+      "on_hand": 2,
+      "request_id": "TRX-0302-INV",
+      "requested": 4,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "incoming": 0,
+      "on_hand": 7,
+      "request_id": "TRX-0303-INV",
+      "requested": 7,
+      "use_result": false
+    }
+  ],
+  "scenario_id": "backorder_policy_v03"
+}

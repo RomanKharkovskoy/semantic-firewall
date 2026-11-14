@@ -1,0 +1,69 @@
+{
+  "consumer": "MarketingService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "audit_reference": "TRX-0101-CAT"
+    },
+    {
+      "audit_reference": "TRX-0102-CAT"
+    },
+    {
+      "audit_reference": "TRX-0103-CAT"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "items": [
+        {
+          "score": 8,
+          "sku": "K1",
+          "title": "Zebra"
+        },
+        {
+          "score": 4,
+          "sku": "K2",
+          "title": "Apple"
+        }
+      ],
+      "request_id": "TRX-0101-CAT",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "items": [
+        {
+          "score": 9,
+          "sku": "K3",
+          "title": "Apple"
+        },
+        {
+          "score": 5,
+          "sku": "K4",
+          "title": "Berry"
+        }
+      ],
+      "request_id": "TRX-0102-CAT",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "items": [
+        {
+          "score": 7,
+          "sku": "K5",
+          "title": "Yacht"
+        },
+        {
+          "score": 2,
+          "sku": "K6",
+          "title": "Alto"
+        }
+      ],
+      "request_id": "TRX-0103-CAT",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "catalog_rank_v01"
+}

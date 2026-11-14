@@ -1,0 +1,39 @@
+{
+  "consumer": "ReceiptService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "policy_triggered": true
+    },
+    {
+      "policy_triggered": false
+    },
+    {
+      "policy_triggered": false
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0101-PRI",
+      "subtotal": 100,
+      "use_result": true,
+      "vat_rate": 0.2
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0102-PRI",
+      "subtotal": 50,
+      "use_result": false,
+      "vat_rate": 0.1
+    },
+    {
+      "audit_enabled": false,
+      "request_id": "TRX-0103-PRI",
+      "subtotal": 25,
+      "use_result": true,
+      "vat_rate": 0
+    }
+  ],
+  "scenario_id": "price_tax_inclusion_v01"
+}

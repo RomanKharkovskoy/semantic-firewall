@@ -1,0 +1,39 @@
+{
+  "consumer": "CustomerPortalService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "report_bucket": 5
+    },
+    {
+      "report_bucket": 5
+    },
+    {
+      "report_bucket": 5
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "existing_id": 300,
+      "is_retry": true,
+      "request_id": "TRX-0301-ORD",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "existing_id": 305,
+      "is_retry": true,
+      "request_id": "TRX-0302-ORD",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "existing_id": 310,
+      "is_retry": false,
+      "request_id": "TRX-0303-ORD",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "retry_idempotency_v03"
+}

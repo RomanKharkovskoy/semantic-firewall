@@ -1,0 +1,36 @@
+{
+  "consumer": "MarketingService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "route_prefix": "b"
+    },
+    {
+      "route_prefix": "q"
+    },
+    {
+      "route_prefix": "x"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0201-CAT",
+      "sku": "B-CD",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "request_id": "TRX-0202-CAT",
+      "sku": "Q10",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0203-CAT",
+      "sku": " x-y ",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "sku_case_policy_v02"
+}

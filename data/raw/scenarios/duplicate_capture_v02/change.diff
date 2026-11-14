@@ -1,0 +1,9 @@
+--- a/paymentservice.py
++++ b/paymentservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = 0.0 if request["was_captured"] else float(request["amount"])
++    result = float(request["amount"])
+     return result
+ 
+ def capture(request: dict) -> dict:

@@ -1,0 +1,6 @@
+def capture(request: dict) -> dict:
+    def compute():
+        result = round(float(request["amount_minor"]) / 100, 2)
+        return result
+    result = compute()
+    return {'captured_amount': result, "request_id": request["request_id"]}

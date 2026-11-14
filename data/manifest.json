@@ -1,0 +1,38 @@
+{
+  "dataset_name": "Semantic Firewall synthetic semantic-compatibility fixtures",
+  "dataset_version": "1.0.0",
+  "seed": 20261114,
+  "entirely_synthetic": true,
+  "language": "Python",
+  "dataset_unit": "(code change, consumer service)",
+  "labeling_rule": "Unchanged consumer contract snapshots: old provider passes, new provider fail => 1; both pass => 0",
+  "label_note": "0 means compatible only within the three supplied contract cases, not universally compatible",
+  "test_oracle": "Golden outputs captured under old provider for unchanged consumers; self-consistent, not externally validated",
+  "no_real_network_calls": true,
+  "repository_alignment": "docs/ml_system_design_doc.md on hw_1",
+  "pairs": 405,
+  "changes": 81,
+  "families": 27,
+  "provider_services": 9,
+  "frozen_split_level": "family_id",
+  "split_counts": {
+    "train": 285,
+    "validation": 60,
+    "test": 60
+  },
+  "excluded_from_model_features": [
+    "label",
+    "split",
+    "pair_id",
+    "scenario_id",
+    "family_id",
+    "label_audit.csv",
+    "contract JSON expected_from_old_provider",
+    "old_tests_pass",
+    "new_tests_pass",
+    "observed_breaking",
+    "provider_output_changed",
+    "business_change"
+  ],
+  "schema_guarantee": "Python call signature, response keys, and response value types stay unchanged within each scenario"
+}

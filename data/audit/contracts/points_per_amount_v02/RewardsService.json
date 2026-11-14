@@ -1,0 +1,36 @@
+{
+  "consumer": "RewardsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "any_amount": true
+    },
+    {
+      "any_amount": false
+    },
+    {
+      "any_amount": true
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0201-LOY",
+      "spent": 50,
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "request_id": "TRX-0202-LOY",
+      "spent": 9,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0203-LOY",
+      "spent": 20,
+      "use_result": true
+    }
+  ],
+  "scenario_id": "points_per_amount_v02"
+}

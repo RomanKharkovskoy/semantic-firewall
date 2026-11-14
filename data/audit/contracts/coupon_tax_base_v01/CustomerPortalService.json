@@ -1,0 +1,42 @@
+{
+  "consumer": "CustomerPortalService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "report_bucket": 4
+    },
+    {
+      "report_bucket": 2
+    },
+    {
+      "report_bucket": 3
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "coupon": 10,
+      "request_id": "TRX-0101-PRI",
+      "subtotal": 100,
+      "use_result": true,
+      "vat_rate": 0.2
+    },
+    {
+      "audit_enabled": true,
+      "coupon": 0,
+      "request_id": "TRX-0102-PRI",
+      "subtotal": 50,
+      "use_result": false,
+      "vat_rate": 0.2
+    },
+    {
+      "audit_enabled": false,
+      "coupon": 20,
+      "request_id": "TRX-0103-PRI",
+      "subtotal": 80,
+      "use_result": true,
+      "vat_rate": 0.1
+    }
+  ],
+  "scenario_id": "coupon_tax_base_v01"
+}

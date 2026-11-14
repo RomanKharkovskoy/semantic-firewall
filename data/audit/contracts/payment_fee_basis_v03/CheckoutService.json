@@ -1,0 +1,42 @@
+{
+  "consumer": "CheckoutService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "any_amount": true
+    },
+    {
+      "any_amount": true
+    },
+    {
+      "any_amount": true
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "fixed_fee": 10,
+      "gross": 90,
+      "rate": 0.1,
+      "request_id": "TRX-0301-PAY",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "fixed_fee": 0,
+      "gross": 30,
+      "rate": 0.15,
+      "request_id": "TRX-0302-PAY",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "fixed_fee": 100,
+      "gross": 1000,
+      "rate": 0.05,
+      "request_id": "TRX-0303-PAY",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "payment_fee_basis_v03"
+}

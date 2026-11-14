@@ -1,0 +1,9 @@
+--- a/catalogservice.py
++++ b/catalogservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = int(request["stock"]) > 0
++    result = int(request["stock"]) > 0 or bool(request["allow_backorder"])
+     return result
+ 
+ def visibility(request: dict) -> dict:

@@ -1,0 +1,7 @@
+def _calculate(request: dict):
+    result = round((float(request["subtotal"]) - float(request["coupon"])) * (1 + float(request["vat_rate"])), 2)
+    return result
+
+def quote(request: dict) -> dict:
+    result = _calculate(request)
+    return {'total': result, "request_id": request["request_id"]}

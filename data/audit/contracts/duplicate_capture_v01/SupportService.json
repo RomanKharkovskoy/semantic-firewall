@@ -1,0 +1,39 @@
+{
+  "consumer": "SupportService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "policy_triggered": true
+    },
+    {
+      "policy_triggered": true
+    },
+    {
+      "policy_triggered": true
+    }
+  ],
+  "requests": [
+    {
+      "amount": 100,
+      "audit_enabled": true,
+      "request_id": "TRX-0101-PAY",
+      "use_result": true,
+      "was_captured": true
+    },
+    {
+      "amount": 100,
+      "audit_enabled": true,
+      "request_id": "TRX-0102-PAY",
+      "use_result": false,
+      "was_captured": false
+    },
+    {
+      "amount": 0,
+      "audit_enabled": false,
+      "request_id": "TRX-0103-PAY",
+      "use_result": true,
+      "was_captured": true
+    }
+  ],
+  "scenario_id": "duplicate_capture_v01"
+}

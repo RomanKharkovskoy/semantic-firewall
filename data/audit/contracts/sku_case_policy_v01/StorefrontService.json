@@ -1,0 +1,36 @@
+{
+  "consumer": "StorefrontService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "routing_key": "AB"
+    },
+    {
+      "routing_key": "Z9"
+    },
+    {
+      "routing_key": ""
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0101-CAT",
+      "sku": " Ab-12 ",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0102-CAT",
+      "sku": "z9",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "request_id": "TRX-0103-CAT",
+      "sku": "  ",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "sku_case_policy_v01"
+}

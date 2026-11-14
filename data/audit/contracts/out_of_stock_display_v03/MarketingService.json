@@ -1,0 +1,39 @@
+{
+  "consumer": "MarketingService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "outcome": "blocked"
+    },
+    {
+      "outcome": "allowed"
+    },
+    {
+      "outcome": "blocked"
+    }
+  ],
+  "requests": [
+    {
+      "allow_backorder": true,
+      "audit_enabled": false,
+      "request_id": "TRX-0301-CAT",
+      "stock": 0,
+      "use_result": true
+    },
+    {
+      "allow_backorder": true,
+      "audit_enabled": true,
+      "request_id": "TRX-0302-CAT",
+      "stock": 4,
+      "use_result": true
+    },
+    {
+      "allow_backorder": false,
+      "audit_enabled": true,
+      "request_id": "TRX-0303-CAT",
+      "stock": 0,
+      "use_result": false
+    }
+  ],
+  "scenario_id": "out_of_stock_display_v03"
+}

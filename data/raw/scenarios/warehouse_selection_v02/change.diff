@@ -1,0 +1,9 @@
+--- a/inventoryservice.py
++++ b/inventoryservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = min(request["warehouses"], key=lambda w: (w["distance_km"], w["id"]))["id"]
++    result = max(request["warehouses"], key=lambda w: (w["stock"], w["id"]))["id"]
+     return result
+ 
+ def route(request: dict) -> dict:

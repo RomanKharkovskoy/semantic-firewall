@@ -1,0 +1,39 @@
+{
+  "consumer": "CheckoutService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": 12.34,
+      "reference": "TRX-0201-PRI"
+    },
+    {
+      "observed": 12.36,
+      "reference": "TRX-0202-PRI"
+    },
+    {
+      "observed": 12.34,
+      "reference": "TRX-0203-PRI"
+    }
+  ],
+  "requests": [
+    {
+      "amount": 12.345,
+      "audit_enabled": true,
+      "request_id": "TRX-0201-PRI",
+      "use_result": false
+    },
+    {
+      "amount": 12.355,
+      "audit_enabled": false,
+      "request_id": "TRX-0202-PRI",
+      "use_result": true
+    },
+    {
+      "amount": 12.34,
+      "audit_enabled": true,
+      "request_id": "TRX-0203-PRI",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "invoice_rounding_v02"
+}

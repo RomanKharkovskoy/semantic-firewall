@@ -1,0 +1,42 @@
+{
+  "consumer": "BillingService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "selected": 0
+    },
+    {
+      "selected": 140.0
+    },
+    {
+      "selected": 27.0
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "fixed_fee": 20,
+      "gross": 200,
+      "rate": 0.15,
+      "request_id": "TRX-0201-PAY",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "fixed_fee": 10,
+      "gross": 150,
+      "rate": 0,
+      "request_id": "TRX-0202-PAY",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "fixed_fee": 5,
+      "gross": 40,
+      "rate": 0.2,
+      "request_id": "TRX-0203-PAY",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "payment_fee_basis_v02"
+}

@@ -1,0 +1,39 @@
+{
+  "consumer": "StorefrontService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "report_bucket": 5
+    },
+    {
+      "report_bucket": 0
+    },
+    {
+      "report_bucket": 0
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "on_hand": 100,
+      "request_id": "TRX-0301-INV",
+      "reserved": 35,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "on_hand": 9,
+      "request_id": "TRX-0302-INV",
+      "reserved": 1,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "on_hand": 2,
+      "request_id": "TRX-0303-INV",
+      "reserved": 0,
+      "use_result": false
+    }
+  ],
+  "scenario_id": "reserved_stock_v03"
+}

@@ -1,0 +1,36 @@
+{
+  "consumer": "CheckoutService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "policy_triggered": true
+    },
+    {
+      "policy_triggered": false
+    },
+    {
+      "policy_triggered": false
+    }
+  ],
+  "requests": [
+    {
+      "amount_minor": 750,
+      "audit_enabled": false,
+      "request_id": "TRX-0301-PAY",
+      "use_result": true
+    },
+    {
+      "amount_minor": 150,
+      "audit_enabled": true,
+      "request_id": "TRX-0302-PAY",
+      "use_result": true
+    },
+    {
+      "amount_minor": 0,
+      "audit_enabled": true,
+      "request_id": "TRX-0303-PAY",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "payment_minor_units_v03"
+}

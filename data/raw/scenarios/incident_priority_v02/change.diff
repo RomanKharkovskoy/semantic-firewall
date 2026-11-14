@@ -1,0 +1,9 @@
+--- a/notificationservice.py
++++ b/notificationservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = "urgent" if request["severity"] == "high" else "normal"
++    result = "normal"
+     return result
+ 
+ def priority(request: dict) -> dict:

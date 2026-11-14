@@ -1,0 +1,39 @@
+{
+  "consumer": "CustomerPortalService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": 20.0,
+      "reference": "TRX-0301-PRI"
+    },
+    {
+      "observed": 100.02,
+      "reference": "TRX-0302-PRI"
+    },
+    {
+      "observed": 5.2,
+      "reference": "TRX-0303-PRI"
+    }
+  ],
+  "requests": [
+    {
+      "amount": 20.005,
+      "audit_enabled": false,
+      "request_id": "TRX-0301-PRI",
+      "use_result": true
+    },
+    {
+      "amount": 100.015,
+      "audit_enabled": true,
+      "request_id": "TRX-0302-PRI",
+      "use_result": true
+    },
+    {
+      "amount": 5.2,
+      "audit_enabled": true,
+      "request_id": "TRX-0303-PRI",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "invoice_rounding_v03"
+}

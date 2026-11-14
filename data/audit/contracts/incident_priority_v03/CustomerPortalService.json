@@ -1,0 +1,39 @@
+{
+  "consumer": "CustomerPortalService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": "normal",
+      "reference": "TRX-0301-NOT"
+    },
+    {
+      "observed": "urgent",
+      "reference": "TRX-0302-NOT"
+    },
+    {
+      "observed": "normal",
+      "reference": "TRX-0303-NOT"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "request_id": "TRX-0301-NOT",
+      "severity": "medium",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0302-NOT",
+      "severity": "high",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0303-NOT",
+      "severity": "low",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "incident_priority_v03"
+}

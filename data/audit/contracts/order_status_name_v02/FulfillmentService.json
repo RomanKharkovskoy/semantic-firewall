@@ -1,0 +1,36 @@
+{
+  "consumer": "FulfillmentService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "routing_key": "PA"
+    },
+    {
+      "routing_key": "PE"
+    },
+    {
+      "routing_key": "PE"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "captured": true,
+      "request_id": "TRX-0201-ORD",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "captured": false,
+      "request_id": "TRX-0202-ORD",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "captured": false,
+      "request_id": "TRX-0203-ORD",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "order_status_name_v02"
+}

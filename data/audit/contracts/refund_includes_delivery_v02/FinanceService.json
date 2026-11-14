@@ -1,0 +1,42 @@
+{
+  "consumer": "FinanceService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": 99.0,
+      "reference": "TRX-0201-BIL"
+    },
+    {
+      "observed": 20.0,
+      "reference": "TRX-0202-BIL"
+    },
+    {
+      "observed": 60.0,
+      "reference": "TRX-0203-BIL"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "delivery_fee": 5,
+      "item_amount": 99,
+      "request_id": "TRX-0201-BIL",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "delivery_fee": 0,
+      "item_amount": 20,
+      "request_id": "TRX-0202-BIL",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "delivery_fee": 12,
+      "item_amount": 60,
+      "request_id": "TRX-0203-BIL",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "refund_includes_delivery_v02"
+}

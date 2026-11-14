@@ -1,0 +1,42 @@
+{
+  "consumer": "CheckoutService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "selected": 50.0
+    },
+    {
+      "selected": 0
+    },
+    {
+      "selected": 60.0
+    }
+  ],
+  "requests": [
+    {
+      "amount": 1000,
+      "audit_enabled": true,
+      "cap": 50,
+      "rate": 0.1,
+      "request_id": "TRX-0101-BIL",
+      "use_result": true
+    },
+    {
+      "amount": 100,
+      "audit_enabled": true,
+      "cap": 50,
+      "rate": 0.1,
+      "request_id": "TRX-0102-BIL",
+      "use_result": false
+    },
+    {
+      "amount": 500,
+      "audit_enabled": false,
+      "cap": 60,
+      "rate": 0.15,
+      "request_id": "TRX-0103-BIL",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "processing_fee_cap_v01"
+}

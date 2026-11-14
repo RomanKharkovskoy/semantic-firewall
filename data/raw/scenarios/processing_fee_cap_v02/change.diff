@@ -1,0 +1,9 @@
+--- a/billingservice.py
++++ b/billingservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = round(min(float(request["amount"]) * float(request["rate"]), float(request["cap"])), 2)
++    result = round(float(request["amount"]) * float(request["rate"]), 2)
+     return result
+ 
+ def calculate(request: dict) -> dict:

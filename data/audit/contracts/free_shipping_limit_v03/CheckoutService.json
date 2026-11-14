@@ -1,0 +1,42 @@
+{
+  "consumer": "CheckoutService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "any_amount": false
+    },
+    {
+      "any_amount": false
+    },
+    {
+      "any_amount": true
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "base_fee": 25,
+      "cart_total": 500,
+      "limit": 500,
+      "request_id": "TRX-0301-SHI",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "base_fee": 25,
+      "cart_total": 501,
+      "limit": 500,
+      "request_id": "TRX-0302-SHI",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "base_fee": 25,
+      "cart_total": 490,
+      "limit": 500,
+      "request_id": "TRX-0303-SHI",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "free_shipping_limit_v03"
+}

@@ -1,0 +1,9 @@
+--- a/loyaltyservice.py
++++ b/loyaltyservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = "VIP" if int(request["points"]) >= int(request["threshold"]) else "STANDARD"
++    result = "VIP" if int(request["points"]) > int(request["threshold"]) else "STANDARD"
+     return result
+ 
+ def tier(request: dict) -> dict:

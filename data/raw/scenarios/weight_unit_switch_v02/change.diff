@@ -1,0 +1,9 @@
+--- a/shippingservice.py
++++ b/shippingservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = round(float(request["weight_g"]) / 1000 * float(request["price_per_kg"]), 2)
++    result = round(float(request["weight_g"]) * float(request["price_per_kg"]), 2)
+     return result
+ 
+ def estimate(request: dict) -> dict:

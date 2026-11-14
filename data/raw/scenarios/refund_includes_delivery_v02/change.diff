@@ -1,0 +1,9 @@
+--- a/billingservice.py
++++ b/billingservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = round(float(request["item_amount"]), 2)
++    result = round(float(request["item_amount"]) + float(request["delivery_fee"]), 2)
+     return result
+ 
+ def refund(request: dict) -> dict:

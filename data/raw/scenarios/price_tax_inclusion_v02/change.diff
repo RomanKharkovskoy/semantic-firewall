@@ -1,0 +1,9 @@
+--- a/pricingservice.py
++++ b/pricingservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = round(float(request["subtotal"]), 2)
++    result = round(float(request["subtotal"]) * (1 + float(request["vat_rate"])), 2)
+     return result
+ 
+ def quote(request: dict) -> dict:

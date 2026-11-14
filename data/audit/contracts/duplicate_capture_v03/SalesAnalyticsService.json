@@ -1,0 +1,39 @@
+{
+  "consumer": "SalesAnalyticsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "any_amount": false
+    },
+    {
+      "any_amount": true
+    },
+    {
+      "any_amount": false
+    }
+  ],
+  "requests": [
+    {
+      "amount": 200,
+      "audit_enabled": false,
+      "request_id": "TRX-0301-PAY",
+      "use_result": true,
+      "was_captured": true
+    },
+    {
+      "amount": 200,
+      "audit_enabled": true,
+      "request_id": "TRX-0302-PAY",
+      "use_result": true,
+      "was_captured": false
+    },
+    {
+      "amount": 20,
+      "audit_enabled": true,
+      "request_id": "TRX-0303-PAY",
+      "use_result": false,
+      "was_captured": true
+    }
+  ],
+  "scenario_id": "duplicate_capture_v03"
+}

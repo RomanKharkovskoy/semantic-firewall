@@ -1,0 +1,39 @@
+{
+  "consumer": "SalesAnalyticsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": 10,
+      "reference": "TRX-0101-LOY"
+    },
+    {
+      "observed": 0,
+      "reference": "TRX-0102-LOY"
+    },
+    {
+      "observed": 0,
+      "reference": "TRX-0103-LOY"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0101-LOY",
+      "spent": 100,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0102-LOY",
+      "spent": 5,
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "request_id": "TRX-0103-LOY",
+      "spent": 0,
+      "use_result": true
+    }
+  ],
+  "scenario_id": "points_per_amount_v01"
+}

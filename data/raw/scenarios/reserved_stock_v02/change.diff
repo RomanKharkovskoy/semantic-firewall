@@ -1,0 +1,9 @@
+--- a/inventoryservice.py
++++ b/inventoryservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = max(0, int(request["on_hand"]) - int(request["reserved"]))
++    result = max(0, int(request["on_hand"]))
+     return result
+ 
+ def availability(request: dict) -> dict:

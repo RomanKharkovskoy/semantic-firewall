@@ -1,0 +1,39 @@
+{
+  "consumer": "SalesAnalyticsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": "2026-05-04",
+      "reference": "TRX-0201-BIL"
+    },
+    {
+      "observed": "2026-07-30",
+      "reference": "TRX-0202-BIL"
+    },
+    {
+      "observed": "2026-08-06",
+      "reference": "TRX-0203-BIL"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "issued_on": "2026-04-04",
+      "request_id": "TRX-0201-BIL",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "issued_on": "2026-06-30",
+      "request_id": "TRX-0202-BIL",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "issued_on": "2026-07-07",
+      "request_id": "TRX-0203-BIL",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "invoice_due_days_v02"
+}

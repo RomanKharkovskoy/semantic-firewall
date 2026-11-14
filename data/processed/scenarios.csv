@@ -1,0 +1,82 @@
+scenario_id,family_id,change_type,provider,method,field,output_kind,split,business_change,provider_output_changed_for_test_cases,num_consumers,num_contract_cases
+price_tax_inclusion_v01,price_tax_inclusion,value_semantics,PricingService,quote,total,number,train,Net amount becomes tax-inclusive while total remains numeric.,1,5,3
+price_tax_inclusion_v02,price_tax_inclusion,value_semantics,PricingService,quote,total,number,train,Net amount becomes tax-inclusive while total remains numeric.,1,5,3
+price_tax_inclusion_v03,price_tax_inclusion,value_semantics,PricingService,quote,total,number,train,Net amount becomes tax-inclusive while total remains numeric.,1,5,3
+coupon_tax_base_v01,coupon_tax_base,calculation_order,PricingService,quote,total,number,train,Coupon stops reducing the taxable base.,1,5,3
+coupon_tax_base_v02,coupon_tax_base,calculation_order,PricingService,quote,total,number,train,Coupon stops reducing the taxable base.,1,5,3
+coupon_tax_base_v03,coupon_tax_base,calculation_order,PricingService,quote,total,number,train,Coupon stops reducing the taxable base.,1,5,3
+invoice_rounding_v01,invoice_rounding,rounding,PricingService,quote,total,number,test,Half-even monetary rounding changes to half-up.,1,5,3
+invoice_rounding_v02,invoice_rounding,rounding,PricingService,quote,total,number,test,Half-even monetary rounding changes to half-up.,1,5,3
+invoice_rounding_v03,invoice_rounding,rounding,PricingService,quote,total,number,test,Half-even monetary rounding changes to half-up.,1,5,3
+free_shipping_limit_v01,free_shipping_limit,boundary_condition,ShippingService,estimate,fee,number,train,Free-shipping threshold changes from inclusive to exclusive.,1,5,3
+free_shipping_limit_v02,free_shipping_limit,boundary_condition,ShippingService,estimate,fee,number,train,Free-shipping threshold changes from inclusive to exclusive.,1,5,3
+free_shipping_limit_v03,free_shipping_limit,boundary_condition,ShippingService,estimate,fee,number,train,Free-shipping threshold changes from inclusive to exclusive.,1,5,3
+weight_unit_switch_v01,weight_unit_switch,unit_conversion,ShippingService,estimate,fee,number,validation,Weight input is silently treated as kilograms rather than grams.,1,5,3
+weight_unit_switch_v02,weight_unit_switch,unit_conversion,ShippingService,estimate,fee,number,validation,Weight input is silently treated as kilograms rather than grams.,1,5,3
+weight_unit_switch_v03,weight_unit_switch,unit_conversion,ShippingService,estimate,fee,number,validation,Weight input is silently treated as kilograms rather than grams.,1,5,3
+remote_shipping_fee_v01,remote_shipping_fee,fallback_policy,ShippingService,estimate,fee,number,train,Remote-area surcharge stops being added.,1,5,3
+remote_shipping_fee_v02,remote_shipping_fee,fallback_policy,ShippingService,estimate,fee,number,train,Remote-area surcharge stops being added.,1,5,3
+remote_shipping_fee_v03,remote_shipping_fee,fallback_policy,ShippingService,estimate,fee,number,train,Remote-area surcharge stops being added.,1,5,3
+reserved_stock_v01,reserved_stock,value_semantics,InventoryService,availability,available,number,train,Available stock stops subtracting outstanding reservations.,1,5,3
+reserved_stock_v02,reserved_stock,value_semantics,InventoryService,availability,available,number,train,Available stock stops subtracting outstanding reservations.,1,5,3
+reserved_stock_v03,reserved_stock,value_semantics,InventoryService,availability,available,number,train,Available stock stops subtracting outstanding reservations.,1,5,3
+backorder_policy_v01,backorder_policy,fallback_policy,InventoryService,availability,available,bool,test,Incoming stock begins counting as available before receipt.,1,5,3
+backorder_policy_v02,backorder_policy,fallback_policy,InventoryService,availability,available,bool,test,Incoming stock begins counting as available before receipt.,1,5,3
+backorder_policy_v03,backorder_policy,fallback_policy,InventoryService,availability,available,bool,test,Incoming stock begins counting as available before receipt.,1,5,3
+warehouse_selection_v01,warehouse_selection,ordering,InventoryService,route,warehouse_id,text,train,Nearest warehouse is replaced with highest-stock warehouse.,1,5,3
+warehouse_selection_v02,warehouse_selection,ordering,InventoryService,route,warehouse_id,text,train,Nearest warehouse is replaced with highest-stock warehouse.,1,5,3
+warehouse_selection_v03,warehouse_selection,ordering,InventoryService,route,warehouse_id,text,train,Nearest warehouse is replaced with highest-stock warehouse.,1,5,3
+order_status_name_v01,order_status_name,enum_semantics,OrderService,summary,status,text,train,Paid order status string changes without changing its field type.,1,5,3
+order_status_name_v02,order_status_name,enum_semantics,OrderService,summary,status,text,train,Paid order status string changes without changing its field type.,1,5,3
+order_status_name_v03,order_status_name,enum_semantics,OrderService,summary,status,text,train,Paid order status string changes without changing its field type.,1,5,3
+cancel_window_v01,cancel_window,boundary_condition,OrderService,cancellable,allowed,bool,train,Cancellation deadline becomes exclusive.,1,5,3
+cancel_window_v02,cancel_window,boundary_condition,OrderService,cancellable,allowed,bool,train,Cancellation deadline becomes exclusive.,1,5,3
+cancel_window_v03,cancel_window,boundary_condition,OrderService,cancellable,allowed,bool,train,Cancellation deadline becomes exclusive.,1,5,3
+retry_idempotency_v01,retry_idempotency,idempotency,OrderService,create,order_id,number,train,Retry starts issuing a new order identifier.,1,5,3
+retry_idempotency_v02,retry_idempotency,idempotency,OrderService,create,order_id,number,train,Retry starts issuing a new order identifier.,1,5,3
+retry_idempotency_v03,retry_idempotency,idempotency,OrderService,create,order_id,number,train,Retry starts issuing a new order identifier.,1,5,3
+vip_tier_limit_v01,vip_tier_limit,boundary_condition,LoyaltyService,tier,tier,text,train,Loyalty tier changes at the exact threshold.,1,5,3
+vip_tier_limit_v02,vip_tier_limit,boundary_condition,LoyaltyService,tier,tier,text,train,Loyalty tier changes at the exact threshold.,1,5,3
+vip_tier_limit_v03,vip_tier_limit,boundary_condition,LoyaltyService,tier,tier,text,train,Loyalty tier changes at the exact threshold.,1,5,3
+points_per_amount_v01,points_per_amount,unit_conversion,LoyaltyService,earn,points,number,train,Earning rate doubles with unchanged integer points schema.,1,5,3
+points_per_amount_v02,points_per_amount,unit_conversion,LoyaltyService,earn,points,number,train,Earning rate doubles with unchanged integer points schema.,1,5,3
+points_per_amount_v03,points_per_amount,unit_conversion,LoyaltyService,earn,points,number,train,Earning rate doubles with unchanged integer points schema.,1,5,3
+reward_expiration_v01,reward_expiration,boundary_condition,LoyaltyService,validity,valid,bool,train,Points expire after fourteen days instead of thirty.,1,5,3
+reward_expiration_v02,reward_expiration,boundary_condition,LoyaltyService,validity,valid,bool,train,Points expire after fourteen days instead of thirty.,1,5,3
+reward_expiration_v03,reward_expiration,boundary_condition,LoyaltyService,validity,valid,bool,train,Points expire after fourteen days instead of thirty.,1,5,3
+sku_case_policy_v01,sku_case_policy,normalization,CatalogService,normalize,sku,text,validation,SKU canonicalization switches case.,1,5,3
+sku_case_policy_v02,sku_case_policy,normalization,CatalogService,normalize,sku,text,validation,SKU canonicalization switches case.,1,5,3
+sku_case_policy_v03,sku_case_policy,normalization,CatalogService,normalize,sku,text,validation,SKU canonicalization switches case.,1,5,3
+out_of_stock_display_v01,out_of_stock_display,fallback_policy,CatalogService,visibility,visible,bool,validation,Out-of-stock products become visible when backorders are allowed.,1,5,3
+out_of_stock_display_v02,out_of_stock_display,fallback_policy,CatalogService,visibility,visible,bool,validation,Out-of-stock products become visible when backorders are allowed.,1,5,3
+out_of_stock_display_v03,out_of_stock_display,fallback_policy,CatalogService,visibility,visible,bool,validation,Out-of-stock products become visible when backorders are allowed.,1,5,3
+catalog_rank_v01,catalog_rank,ordering,CatalogService,top_item,sku,text,test,Top item changes from relevance score to title order.,1,5,3
+catalog_rank_v02,catalog_rank,ordering,CatalogService,top_item,sku,text,test,Top item changes from relevance score to title order.,1,5,3
+catalog_rank_v03,catalog_rank,ordering,CatalogService,top_item,sku,text,test,Top item changes from relevance score to title order.,1,5,3
+processing_fee_cap_v01,processing_fee_cap,boundary_condition,BillingService,calculate,fee,number,test,Processing fee stops respecting its maximum cap.,1,5,3
+processing_fee_cap_v02,processing_fee_cap,boundary_condition,BillingService,calculate,fee,number,test,Processing fee stops respecting its maximum cap.,1,5,3
+processing_fee_cap_v03,processing_fee_cap,boundary_condition,BillingService,calculate,fee,number,test,Processing fee stops respecting its maximum cap.,1,5,3
+invoice_due_days_v01,invoice_due_days,temporal_semantics,BillingService,deadline,due_date,text,train,Invoice due date is moved sixteen days earlier.,1,5,3
+invoice_due_days_v02,invoice_due_days,temporal_semantics,BillingService,deadline,due_date,text,train,Invoice due date is moved sixteen days earlier.,1,5,3
+invoice_due_days_v03,invoice_due_days,temporal_semantics,BillingService,deadline,due_date,text,train,Invoice due date is moved sixteen days earlier.,1,5,3
+refund_includes_delivery_v01,refund_includes_delivery,value_semantics,BillingService,refund,refund,number,train,Refund changes from items-only to items plus delivery.,1,5,3
+refund_includes_delivery_v02,refund_includes_delivery,value_semantics,BillingService,refund,refund,number,train,Refund changes from items-only to items plus delivery.,1,5,3
+refund_includes_delivery_v03,refund_includes_delivery,value_semantics,BillingService,refund,refund,number,train,Refund changes from items-only to items plus delivery.,1,5,3
+locale_default_v01,locale_default,fallback_policy,NotificationService,language,locale,text,train,Missing locale now defaults to English instead of Russian.,1,5,3
+locale_default_v02,locale_default,fallback_policy,NotificationService,language,locale,text,train,Missing locale now defaults to English instead of Russian.,1,5,3
+locale_default_v03,locale_default,fallback_policy,NotificationService,language,locale,text,train,Missing locale now defaults to English instead of Russian.,1,5,3
+notification_retry_v01,notification_retry,idempotency,NotificationService,dispatch,should_send,bool,validation,Repeated notifications are sent again.,1,5,3
+notification_retry_v02,notification_retry,idempotency,NotificationService,dispatch,should_send,bool,validation,Repeated notifications are sent again.,1,5,3
+notification_retry_v03,notification_retry,idempotency,NotificationService,dispatch,should_send,bool,validation,Repeated notifications are sent again.,1,5,3
+incident_priority_v01,incident_priority,enum_semantics,NotificationService,priority,priority,text,train,High-severity events lose their urgent priority.,1,5,3
+incident_priority_v02,incident_priority,enum_semantics,NotificationService,priority,priority,text,train,High-severity events lose their urgent priority.,1,5,3
+incident_priority_v03,incident_priority,enum_semantics,NotificationService,priority,priority,text,train,High-severity events lose their urgent priority.,1,5,3
+payment_fee_basis_v01,payment_fee_basis,calculation_order,PaymentService,settle,net_amount,number,train,Percent payment fee is charged on a different base.,1,5,3
+payment_fee_basis_v02,payment_fee_basis,calculation_order,PaymentService,settle,net_amount,number,train,Percent payment fee is charged on a different base.,1,5,3
+payment_fee_basis_v03,payment_fee_basis,calculation_order,PaymentService,settle,net_amount,number,train,Percent payment fee is charged on a different base.,1,5,3
+duplicate_capture_v01,duplicate_capture,idempotency,PaymentService,capture,captured_amount,number,train,Repeated capture unexpectedly charges the full amount.,1,5,3
+duplicate_capture_v02,duplicate_capture,idempotency,PaymentService,capture,captured_amount,number,train,Repeated capture unexpectedly charges the full amount.,1,5,3
+duplicate_capture_v03,duplicate_capture,idempotency,PaymentService,capture,captured_amount,number,train,Repeated capture unexpectedly charges the full amount.,1,5,3
+payment_minor_units_v01,payment_minor_units,unit_conversion,PaymentService,capture,captured_amount,number,train,Minor currency units are silently treated as major units.,1,5,3
+payment_minor_units_v02,payment_minor_units,unit_conversion,PaymentService,capture,captured_amount,number,train,Minor currency units are silently treated as major units.,1,5,3
+payment_minor_units_v03,payment_minor_units,unit_conversion,PaymentService,capture,captured_amount,number,train,Minor currency units are silently treated as major units.,1,5,3

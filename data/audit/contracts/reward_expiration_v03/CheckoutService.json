@@ -1,0 +1,36 @@
+{
+  "consumer": "CheckoutService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "outcome": "allowed"
+    },
+    {
+      "outcome": "blocked"
+    },
+    {
+      "outcome": "allowed"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "days_old": 30,
+      "request_id": "TRX-0301-LOY",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "days_old": 35,
+      "request_id": "TRX-0302-LOY",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "days_old": 16,
+      "request_id": "TRX-0303-LOY",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "reward_expiration_v03"
+}

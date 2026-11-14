@@ -1,0 +1,36 @@
+{
+  "consumer": "CustomerPortalService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "routing_key": "PA"
+    },
+    {
+      "routing_key": "PE"
+    },
+    {
+      "routing_key": "PA"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "captured": true,
+      "request_id": "TRX-0101-ORD",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "captured": false,
+      "request_id": "TRX-0102-ORD",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "captured": true,
+      "request_id": "TRX-0103-ORD",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "order_status_name_v01"
+}
