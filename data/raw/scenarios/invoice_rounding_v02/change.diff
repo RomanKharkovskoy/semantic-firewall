@@ -1,0 +1,12 @@
+--- a/pricingservice.py
++++ b/pricingservice.py
+@@ -1,7 +1,7 @@
+-from decimal import Decimal, ROUND_HALF_EVEN
++from decimal import Decimal, ROUND_HALF_UP
+ 
+ def _calculate(request: dict):
+-    result = float(Decimal(str(request["amount"])).quantize(Decimal("0.01"), rounding=ROUND_HALF_EVEN))
++    result = float(Decimal(str(request["amount"])).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP))
+     return result
+ 
+ def quote(request: dict) -> dict:

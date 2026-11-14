@@ -1,0 +1,39 @@
+{
+  "consumer": "AuditService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": true,
+      "reference": "TRX-0201-NOT"
+    },
+    {
+      "observed": false,
+      "reference": "TRX-0202-NOT"
+    },
+    {
+      "observed": true,
+      "reference": "TRX-0203-NOT"
+    }
+  ],
+  "requests": [
+    {
+      "already_sent": false,
+      "audit_enabled": true,
+      "request_id": "TRX-0201-NOT",
+      "use_result": false
+    },
+    {
+      "already_sent": true,
+      "audit_enabled": false,
+      "request_id": "TRX-0202-NOT",
+      "use_result": true
+    },
+    {
+      "already_sent": false,
+      "audit_enabled": true,
+      "request_id": "TRX-0203-NOT",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "notification_retry_v02"
+}

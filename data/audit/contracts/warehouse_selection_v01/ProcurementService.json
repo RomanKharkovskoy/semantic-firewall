@@ -1,0 +1,72 @@
+{
+  "consumer": "ProcurementService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": "W1",
+      "reference": "TRX-0101-INV"
+    },
+    {
+      "observed": "W3",
+      "reference": "TRX-0102-INV"
+    },
+    {
+      "observed": "W5",
+      "reference": "TRX-0103-INV"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0101-INV",
+      "use_result": true,
+      "warehouses": [
+        {
+          "distance_km": 5,
+          "id": "W1",
+          "stock": 1
+        },
+        {
+          "distance_km": 18,
+          "id": "W2",
+          "stock": 30
+        }
+      ]
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0102-INV",
+      "use_result": false,
+      "warehouses": [
+        {
+          "distance_km": 7,
+          "id": "W3",
+          "stock": 9
+        },
+        {
+          "distance_km": 9,
+          "id": "W4",
+          "stock": 1
+        }
+      ]
+    },
+    {
+      "audit_enabled": false,
+      "request_id": "TRX-0103-INV",
+      "use_result": true,
+      "warehouses": [
+        {
+          "distance_km": 2,
+          "id": "W5",
+          "stock": 7
+        },
+        {
+          "distance_km": 12,
+          "id": "W6",
+          "stock": 10
+        }
+      ]
+    }
+  ],
+  "scenario_id": "warehouse_selection_v01"
+}

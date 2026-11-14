@@ -1,0 +1,39 @@
+{
+  "consumer": "SalesAnalyticsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "policy_triggered": true
+    },
+    {
+      "policy_triggered": true
+    },
+    {
+      "policy_triggered": true
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "existing_id": 100,
+      "is_retry": true,
+      "request_id": "TRX-0101-ORD",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "existing_id": 101,
+      "is_retry": false,
+      "request_id": "TRX-0102-ORD",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "existing_id": 102,
+      "is_retry": true,
+      "request_id": "TRX-0103-ORD",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "retry_idempotency_v01"
+}

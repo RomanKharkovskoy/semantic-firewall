@@ -1,0 +1,9 @@
+--- a/inventoryservice.py
++++ b/inventoryservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = int(request["on_hand"]) >= int(request["requested"])
++    result = int(request["on_hand"]) + int(request["incoming"]) >= int(request["requested"])
+     return result
+ 
+ def availability(request: dict) -> dict:

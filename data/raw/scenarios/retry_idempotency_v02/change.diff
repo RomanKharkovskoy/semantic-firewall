@@ -1,0 +1,9 @@
+--- a/orderservice.py
++++ b/orderservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = int(request["existing_id"]) if request["is_retry"] else int(request["existing_id"]) + 1
++    result = int(request["existing_id"]) + 1
+     return result
+ 
+ def create(request: dict) -> dict:

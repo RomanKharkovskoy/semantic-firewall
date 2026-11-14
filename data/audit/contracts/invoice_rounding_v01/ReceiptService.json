@@ -1,0 +1,39 @@
+{
+  "consumer": "ReceiptService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": 10.12,
+      "reference": "TRX-0101-PRI"
+    },
+    {
+      "observed": 10.14,
+      "reference": "TRX-0102-PRI"
+    },
+    {
+      "observed": 10.12,
+      "reference": "TRX-0103-PRI"
+    }
+  ],
+  "requests": [
+    {
+      "amount": 10.125,
+      "audit_enabled": true,
+      "request_id": "TRX-0101-PRI",
+      "use_result": true
+    },
+    {
+      "amount": 10.135,
+      "audit_enabled": true,
+      "request_id": "TRX-0102-PRI",
+      "use_result": false
+    },
+    {
+      "amount": 10.12,
+      "audit_enabled": false,
+      "request_id": "TRX-0103-PRI",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "invoice_rounding_v01"
+}

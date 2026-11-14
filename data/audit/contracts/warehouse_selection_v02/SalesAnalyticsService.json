@@ -1,0 +1,69 @@
+{
+  "consumer": "SalesAnalyticsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "route_prefix": "w"
+    },
+    {
+      "route_prefix": "w"
+    },
+    {
+      "route_prefix": "w"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0201-INV",
+      "use_result": false,
+      "warehouses": [
+        {
+          "distance_km": 1,
+          "id": "W7",
+          "stock": 2
+        },
+        {
+          "distance_km": 10,
+          "id": "W8",
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "audit_enabled": false,
+      "request_id": "TRX-0202-INV",
+      "use_result": true,
+      "warehouses": [
+        {
+          "distance_km": 2,
+          "id": "W9",
+          "stock": 40
+        },
+        {
+          "distance_km": 20,
+          "id": "W0",
+          "stock": 1
+        }
+      ]
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0203-INV",
+      "use_result": true,
+      "warehouses": [
+        {
+          "distance_km": 3,
+          "id": "WA",
+          "stock": 4
+        },
+        {
+          "distance_km": 4,
+          "id": "WB",
+          "stock": 5
+        }
+      ]
+    }
+  ],
+  "scenario_id": "warehouse_selection_v02"
+}

@@ -1,0 +1,9 @@
+--- a/notificationservice.py
++++ b/notificationservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = not bool(request["already_sent"])
++    result = True
+     return result
+ 
+ def dispatch(request: dict) -> dict:

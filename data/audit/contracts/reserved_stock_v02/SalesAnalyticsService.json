@@ -1,0 +1,42 @@
+{
+  "consumer": "SalesAnalyticsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": 4,
+      "reference": "TRX-0201-INV"
+    },
+    {
+      "observed": 0,
+      "reference": "TRX-0202-INV"
+    },
+    {
+      "observed": 0,
+      "reference": "TRX-0203-INV"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "on_hand": 12,
+      "request_id": "TRX-0201-INV",
+      "reserved": 8,
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "on_hand": 6,
+      "request_id": "TRX-0202-INV",
+      "reserved": 6,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "on_hand": 0,
+      "request_id": "TRX-0203-INV",
+      "reserved": 2,
+      "use_result": true
+    }
+  ],
+  "scenario_id": "reserved_stock_v02"
+}

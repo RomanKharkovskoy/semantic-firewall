@@ -1,0 +1,36 @@
+{
+  "consumer": "SearchService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "normalized_value": "prod-123"
+    },
+    {
+      "normalized_value": "v2"
+    },
+    {
+      "normalized_value": "az"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "request_id": "TRX-0301-CAT",
+      "sku": "prod-123",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0302-CAT",
+      "sku": "V2 ",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0303-CAT",
+      "sku": "AZ",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "sku_case_policy_v03"
+}

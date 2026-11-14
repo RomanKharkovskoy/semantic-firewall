@@ -1,0 +1,36 @@
+{
+  "consumer": "AuditService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "normalized_value": "ru"
+    },
+    {
+      "normalized_value": "fr"
+    },
+    {
+      "normalized_value": "ru"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "locale": null,
+      "request_id": "TRX-0201-NOT",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "locale": "fr",
+      "request_id": "TRX-0202-NOT",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "locale": "ru",
+      "request_id": "TRX-0203-NOT",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "locale_default_v02"
+}

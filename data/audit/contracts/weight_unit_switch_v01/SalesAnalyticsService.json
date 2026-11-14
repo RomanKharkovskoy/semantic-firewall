@@ -1,0 +1,39 @@
+{
+  "consumer": "SalesAnalyticsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "policy_triggered": true
+    },
+    {
+      "policy_triggered": false
+    },
+    {
+      "policy_triggered": false
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "price_per_kg": 15,
+      "request_id": "TRX-0101-SHI",
+      "use_result": true,
+      "weight_g": 1000
+    },
+    {
+      "audit_enabled": true,
+      "price_per_kg": 12,
+      "request_id": "TRX-0102-SHI",
+      "use_result": false,
+      "weight_g": 250
+    },
+    {
+      "audit_enabled": false,
+      "price_per_kg": 15,
+      "request_id": "TRX-0103-SHI",
+      "use_result": true,
+      "weight_g": 0
+    }
+  ],
+  "scenario_id": "weight_unit_switch_v01"
+}

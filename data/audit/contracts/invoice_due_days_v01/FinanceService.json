@@ -1,0 +1,36 @@
+{
+  "consumer": "FinanceService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "audit_reference": "TRX-0101-BIL"
+    },
+    {
+      "audit_reference": "TRX-0102-BIL"
+    },
+    {
+      "audit_reference": "TRX-0103-BIL"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "issued_on": "2026-01-15",
+      "request_id": "TRX-0101-BIL",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "issued_on": "2026-02-28",
+      "request_id": "TRX-0102-BIL",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "issued_on": "2026-03-01",
+      "request_id": "TRX-0103-BIL",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "invoice_due_days_v01"
+}

@@ -1,0 +1,39 @@
+{
+  "consumer": "CRMService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "audit_reference": "TRX-0101-LOY"
+    },
+    {
+      "audit_reference": "TRX-0102-LOY"
+    },
+    {
+      "audit_reference": "TRX-0103-LOY"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "points": 1000,
+      "request_id": "TRX-0101-LOY",
+      "threshold": 1000,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "points": 999,
+      "request_id": "TRX-0102-LOY",
+      "threshold": 1000,
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "points": 1001,
+      "request_id": "TRX-0103-LOY",
+      "threshold": 1000,
+      "use_result": true
+    }
+  ],
+  "scenario_id": "vip_tier_limit_v01"
+}

@@ -1,0 +1,39 @@
+{
+  "consumer": "MarketingService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "selected": "not_requested"
+    },
+    {
+      "selected": "VIP"
+    },
+    {
+      "selected": "STANDARD"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "points": 200,
+      "request_id": "TRX-0201-LOY",
+      "threshold": 200,
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "points": 210,
+      "request_id": "TRX-0202-LOY",
+      "threshold": 200,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "points": 190,
+      "request_id": "TRX-0203-LOY",
+      "threshold": 200,
+      "use_result": true
+    }
+  ],
+  "scenario_id": "vip_tier_limit_v02"
+}

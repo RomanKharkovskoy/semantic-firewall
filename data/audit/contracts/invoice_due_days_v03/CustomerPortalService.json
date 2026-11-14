@@ -1,0 +1,36 @@
+{
+  "consumer": "CustomerPortalService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "selected": "2026-09-07"
+    },
+    {
+      "selected": "2026-12-10"
+    },
+    {
+      "selected": "not_requested"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "issued_on": "2026-08-08",
+      "request_id": "TRX-0301-BIL",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "issued_on": "2026-11-10",
+      "request_id": "TRX-0302-BIL",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "issued_on": "2026-12-31",
+      "request_id": "TRX-0303-BIL",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "invoice_due_days_v03"
+}

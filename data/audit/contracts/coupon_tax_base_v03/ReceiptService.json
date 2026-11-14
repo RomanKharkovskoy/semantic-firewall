@@ -1,0 +1,42 @@
+{
+  "consumer": "ReceiptService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "any_amount": true
+    },
+    {
+      "any_amount": true
+    },
+    {
+      "any_amount": true
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "coupon": 50,
+      "request_id": "TRX-0301-PRI",
+      "subtotal": 500,
+      "use_result": true,
+      "vat_rate": 0.2
+    },
+    {
+      "audit_enabled": true,
+      "coupon": 0,
+      "request_id": "TRX-0302-PRI",
+      "subtotal": 40,
+      "use_result": true,
+      "vat_rate": 0.15
+    },
+    {
+      "audit_enabled": true,
+      "coupon": 15,
+      "request_id": "TRX-0303-PRI",
+      "subtotal": 75,
+      "use_result": false,
+      "vat_rate": 0.1
+    }
+  ],
+  "scenario_id": "coupon_tax_base_v03"
+}

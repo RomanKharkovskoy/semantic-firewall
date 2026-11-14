@@ -1,0 +1,42 @@
+{
+  "consumer": "SalesAnalyticsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "report_bucket": 0
+    },
+    {
+      "report_bucket": 12
+    },
+    {
+      "report_bucket": 0
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "base_fee": 12,
+      "cart_total": 100,
+      "limit": 100,
+      "request_id": "TRX-0101-SHI",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "base_fee": 12,
+      "cart_total": 99,
+      "limit": 100,
+      "request_id": "TRX-0102-SHI",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "base_fee": 12,
+      "cart_total": 110,
+      "limit": 100,
+      "request_id": "TRX-0103-SHI",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "free_shipping_limit_v01"
+}

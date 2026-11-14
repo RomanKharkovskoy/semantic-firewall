@@ -1,0 +1,2 @@
+data/**/*.csv -text whitespace=cr-at-eol
+data/raw/scenarios/**/change.diff whitespace=-blank-at-eol

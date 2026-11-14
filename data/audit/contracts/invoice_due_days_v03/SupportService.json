@@ -1,0 +1,39 @@
+{
+  "consumer": "SupportService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": "2026-09-07",
+      "reference": "TRX-0301-BIL"
+    },
+    {
+      "observed": "2026-12-10",
+      "reference": "TRX-0302-BIL"
+    },
+    {
+      "observed": "2027-01-30",
+      "reference": "TRX-0303-BIL"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "issued_on": "2026-08-08",
+      "request_id": "TRX-0301-BIL",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "issued_on": "2026-11-10",
+      "request_id": "TRX-0302-BIL",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "issued_on": "2026-12-31",
+      "request_id": "TRX-0303-BIL",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "invoice_due_days_v03"
+}

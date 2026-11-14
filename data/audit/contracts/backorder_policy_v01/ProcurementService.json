@@ -1,0 +1,42 @@
+{
+  "consumer": "ProcurementService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "audit_reference": "TRX-0101-INV"
+    },
+    {
+      "audit_reference": "TRX-0102-INV"
+    },
+    {
+      "audit_reference": "TRX-0103-INV"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "incoming": 5,
+      "on_hand": 3,
+      "request_id": "TRX-0101-INV",
+      "requested": 6,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "incoming": 1,
+      "on_hand": 3,
+      "request_id": "TRX-0102-INV",
+      "requested": 3,
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "incoming": 0,
+      "on_hand": 0,
+      "request_id": "TRX-0103-INV",
+      "requested": 1,
+      "use_result": true
+    }
+  ],
+  "scenario_id": "backorder_policy_v01"
+}

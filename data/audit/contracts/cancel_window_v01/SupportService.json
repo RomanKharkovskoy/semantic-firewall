@@ -1,0 +1,36 @@
+{
+  "consumer": "SupportService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "selected": true
+    },
+    {
+      "selected": false
+    },
+    {
+      "selected": false
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "hours_since_order": 24,
+      "request_id": "TRX-0101-ORD",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "hours_since_order": 23,
+      "request_id": "TRX-0102-ORD",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "hours_since_order": 25,
+      "request_id": "TRX-0103-ORD",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "cancel_window_v01"
+}

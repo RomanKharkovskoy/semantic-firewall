@@ -1,0 +1,36 @@
+{
+  "consumer": "CRMService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "audit_reference": "TRX-0101-NOT"
+    },
+    {
+      "audit_reference": "TRX-0102-NOT"
+    },
+    {
+      "audit_reference": "TRX-0103-NOT"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "locale": null,
+      "request_id": "TRX-0101-NOT",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "locale": "ru",
+      "request_id": "TRX-0102-NOT",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "locale": "en",
+      "request_id": "TRX-0103-NOT",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "locale_default_v01"
+}

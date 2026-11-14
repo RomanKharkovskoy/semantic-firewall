@@ -1,0 +1,9 @@
+--- a/paymentservice.py
++++ b/paymentservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = round(float(request["gross"]) - float(request["fixed_fee"]) - float(request["gross"]) * float(request["rate"]), 2)
++    result = round((float(request["gross"]) - float(request["fixed_fee"])) * (1 - float(request["rate"])), 2)
+     return result
+ 
+ def settle(request: dict) -> dict:

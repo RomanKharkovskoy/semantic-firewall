@@ -1,0 +1,39 @@
+{
+  "consumer": "CheckoutService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "selected": false
+    },
+    {
+      "selected": true
+    },
+    {
+      "selected": false
+    }
+  ],
+  "requests": [
+    {
+      "allow_backorder": true,
+      "audit_enabled": true,
+      "request_id": "TRX-0201-CAT",
+      "stock": 0,
+      "use_result": false
+    },
+    {
+      "allow_backorder": false,
+      "audit_enabled": false,
+      "request_id": "TRX-0202-CAT",
+      "stock": 2,
+      "use_result": true
+    },
+    {
+      "allow_backorder": false,
+      "audit_enabled": true,
+      "request_id": "TRX-0203-CAT",
+      "stock": 0,
+      "use_result": true
+    }
+  ],
+  "scenario_id": "out_of_stock_display_v02"
+}

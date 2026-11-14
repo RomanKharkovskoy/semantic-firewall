@@ -1,0 +1,39 @@
+{
+  "consumer": "FulfillmentService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": true,
+      "reference": "TRX-0201-ORD"
+    },
+    {
+      "observed": true,
+      "reference": "TRX-0202-ORD"
+    },
+    {
+      "observed": false,
+      "reference": "TRX-0203-ORD"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "hours_since_order": 24,
+      "request_id": "TRX-0201-ORD",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "hours_since_order": 12,
+      "request_id": "TRX-0202-ORD",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "hours_since_order": 24.1,
+      "request_id": "TRX-0203-ORD",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "cancel_window_v02"
+}

@@ -1,0 +1,9 @@
+--- a/orderservice.py
++++ b/orderservice.py
+@@ -1,5 +1,5 @@
+ def _calculate(request: dict):
+-    result = "PAID" if request["captured"] else "PENDING"
++    result = "COMPLETE" if request["captured"] else "PENDING"
+     return result
+ 
+ def summary(request: dict) -> dict:

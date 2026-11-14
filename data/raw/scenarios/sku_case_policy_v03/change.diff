@@ -1,0 +1,10 @@
+--- a/catalogservice.py
++++ b/catalogservice.py
+@@ -1,6 +1,6 @@
+ def normalize(request: dict) -> dict:
+     def compute():
+-        result = str(request["sku"]).strip().upper()
++        result = str(request["sku"]).strip().lower()
+         return result
+     result = compute()
+     return {'sku': result, "request_id": request["request_id"]}

@@ -1,0 +1,36 @@
+{
+  "consumer": "CustomerPortalService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "audit_reference": "TRX-0101-LOY"
+    },
+    {
+      "audit_reference": "TRX-0102-LOY"
+    },
+    {
+      "audit_reference": "TRX-0103-LOY"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "days_old": 20,
+      "request_id": "TRX-0101-LOY",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "days_old": 10,
+      "request_id": "TRX-0102-LOY",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "days_old": 31,
+      "request_id": "TRX-0103-LOY",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "reward_expiration_v01"
+}

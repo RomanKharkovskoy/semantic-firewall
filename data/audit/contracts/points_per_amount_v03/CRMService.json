@@ -1,0 +1,36 @@
+{
+  "consumer": "CRMService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "any_amount": true
+    },
+    {
+      "any_amount": true
+    },
+    {
+      "any_amount": false
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "request_id": "TRX-0301-LOY",
+      "spent": 75,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0302-LOY",
+      "spent": 40,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "request_id": "TRX-0303-LOY",
+      "spent": 1,
+      "use_result": false
+    }
+  ],
+  "scenario_id": "points_per_amount_v03"
+}

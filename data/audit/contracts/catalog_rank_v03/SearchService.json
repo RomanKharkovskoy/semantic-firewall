@@ -1,0 +1,69 @@
+{
+  "consumer": "SearchService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "selected": "M1"
+    },
+    {
+      "selected": "M4"
+    },
+    {
+      "selected": "not_requested"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "items": [
+        {
+          "score": 8,
+          "sku": "M1",
+          "title": "Silver"
+        },
+        {
+          "score": 2,
+          "sku": "M2",
+          "title": "Bronze"
+        }
+      ],
+      "request_id": "TRX-0301-CAT",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "items": [
+        {
+          "score": 3,
+          "sku": "M3",
+          "title": "Amber"
+        },
+        {
+          "score": 9,
+          "sku": "M4",
+          "title": "Tango"
+        }
+      ],
+      "request_id": "TRX-0302-CAT",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "items": [
+        {
+          "score": 9,
+          "sku": "M5",
+          "title": "Banana"
+        },
+        {
+          "score": 8,
+          "sku": "M6",
+          "title": "Apple"
+        }
+      ],
+      "request_id": "TRX-0303-CAT",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "catalog_rank_v03"
+}

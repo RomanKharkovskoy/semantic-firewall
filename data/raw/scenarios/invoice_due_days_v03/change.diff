@@ -1,0 +1,11 @@
+--- a/billingservice.py
++++ b/billingservice.py
+@@ -2,7 +2,7 @@
+ 
+ def deadline(request: dict) -> dict:
+     def compute():
+-        result = (date.fromisoformat(request["issued_on"]) + timedelta(days=30)).isoformat()
++        result = (date.fromisoformat(request["issued_on"]) + timedelta(days=14)).isoformat()
+         return result
+     result = compute()
+     return {'due_date': result, "request_id": request["request_id"]}

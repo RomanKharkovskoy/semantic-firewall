@@ -1,0 +1,39 @@
+{
+  "consumer": "ReturnsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "selected": 2.5
+    },
+    {
+      "selected": 25.0
+    },
+    {
+      "selected": 0
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "price_per_kg": 20,
+      "request_id": "TRX-0301-SHI",
+      "use_result": true,
+      "weight_g": 125
+    },
+    {
+      "audit_enabled": true,
+      "price_per_kg": 10,
+      "request_id": "TRX-0302-SHI",
+      "use_result": true,
+      "weight_g": 2500
+    },
+    {
+      "audit_enabled": true,
+      "price_per_kg": 10,
+      "request_id": "TRX-0303-SHI",
+      "use_result": false,
+      "weight_g": 5
+    }
+  ],
+  "scenario_id": "weight_unit_switch_v03"
+}

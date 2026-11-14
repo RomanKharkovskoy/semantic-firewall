@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "pairs": 405,
+  "changes": 81,
+  "unique_diff_hashes": 81,
+  "mutation_families": 27,
+  "categories": 11,
+  "providers": 9,
+  "consumers": 23,
+  "dependency_edges": 54,
+  "breaking": 281,
+  "non_breaking": 124,
+  "breaking_fraction": 0.6938,
+  "replayed_consumer_contracts": 405,
+  "replayed_test_calls": 2430,
+  "schema_checked_pairs": 1215,
+  "old_provider_contract_failures": 0,
+  "api_schema_violations": 0,
+  "verified_new_provider_contract_failures": 281,
+  "family_leakage_across_splits": 0,
+  "duplicate_git_diffs": 0,
+  "category_both_labels": 11,
+  "split_class_counts": {
+    "train": {
+      "0": 85,
+      "1": 200
+    },
+    "validation": {
+      "0": 16,
+      "1": 44
+    },
+    "test": {
+      "0": 23,
+      "1": 37
+    }
+  },
+  "limits": [
+    "Synthetic code and test oracles were authored from specifications, not independent real incidents",
+    "0 means compatible only under supplied test cases, not under every possible execution",
+    "Variants within each mutation family share semantic patterns and must remain in the same split",
+    "Contract tests execute Python module calls, not actual networked microservices",
+    "Gold-output tests can treat harmless consumer-visible changes as breaking: review contract semantics before real use",
+    "Source patterns are simplified; production generalization remains unproven"
+  ]
+}

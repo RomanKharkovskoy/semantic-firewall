@@ -1,0 +1,36 @@
+{
+  "consumer": "SupportService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "route_prefix": "r"
+    },
+    {
+      "route_prefix": "d"
+    },
+    {
+      "route_prefix": "r"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "locale": null,
+      "request_id": "TRX-0301-NOT",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "locale": "de",
+      "request_id": "TRX-0302-NOT",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "locale": "",
+      "request_id": "TRX-0303-NOT",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "locale_default_v03"
+}

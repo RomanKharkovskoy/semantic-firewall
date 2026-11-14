@@ -1,0 +1,42 @@
+{
+  "consumer": "SalesAnalyticsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "selected": false
+    },
+    {
+      "selected": false
+    },
+    {
+      "selected": true
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "incoming": 3,
+      "on_hand": 4,
+      "request_id": "TRX-0201-INV",
+      "requested": 7,
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "incoming": 1,
+      "on_hand": 4,
+      "request_id": "TRX-0202-INV",
+      "requested": 8,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "incoming": 0,
+      "on_hand": 10,
+      "request_id": "TRX-0203-INV",
+      "requested": 7,
+      "use_result": true
+    }
+  ],
+  "scenario_id": "backorder_policy_v02"
+}

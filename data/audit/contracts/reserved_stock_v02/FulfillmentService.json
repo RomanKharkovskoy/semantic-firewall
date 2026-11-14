@@ -1,0 +1,39 @@
+{
+  "consumer": "FulfillmentService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "any_amount": true
+    },
+    {
+      "any_amount": false
+    },
+    {
+      "any_amount": false
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "on_hand": 12,
+      "request_id": "TRX-0201-INV",
+      "reserved": 8,
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "on_hand": 6,
+      "request_id": "TRX-0202-INV",
+      "reserved": 6,
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "on_hand": 0,
+      "request_id": "TRX-0203-INV",
+      "reserved": 2,
+      "use_result": true
+    }
+  ],
+  "scenario_id": "reserved_stock_v02"
+}

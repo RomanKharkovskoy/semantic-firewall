@@ -1,0 +1,42 @@
+{
+  "consumer": "SalesAnalyticsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "report_bucket": 5
+    },
+    {
+      "report_bucket": 1
+    },
+    {
+      "report_bucket": 1
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": false,
+      "base_fee": 40,
+      "is_remote": true,
+      "remote_fee": 25,
+      "request_id": "TRX-0301-SHI",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "base_fee": 20,
+      "is_remote": false,
+      "remote_fee": 25,
+      "request_id": "TRX-0302-SHI",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "base_fee": 8,
+      "is_remote": true,
+      "remote_fee": 9,
+      "request_id": "TRX-0303-SHI",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "remote_shipping_fee_v03"
+}

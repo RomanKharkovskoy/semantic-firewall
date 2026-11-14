@@ -1,0 +1,7 @@
+--- a/loyaltyservice.py
++++ b/loyaltyservice.py
+@@ -1,3 +1,3 @@
+ def validity(request: dict) -> dict:
+-    result = int(request["days_old"]) <= 30
++    result = int(request["days_old"]) <= 14
+     return {'valid': result, "request_id": request["request_id"]}

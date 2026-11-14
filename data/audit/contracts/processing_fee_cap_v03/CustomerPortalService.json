@@ -1,0 +1,42 @@
+{
+  "consumer": "CustomerPortalService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "selected": 80.0
+    },
+    {
+      "selected": 5.0
+    },
+    {
+      "selected": 0
+    }
+  ],
+  "requests": [
+    {
+      "amount": 2000,
+      "audit_enabled": false,
+      "cap": 80,
+      "rate": 0.06,
+      "request_id": "TRX-0301-BIL",
+      "use_result": true
+    },
+    {
+      "amount": 50,
+      "audit_enabled": true,
+      "cap": 10,
+      "rate": 0.1,
+      "request_id": "TRX-0302-BIL",
+      "use_result": true
+    },
+    {
+      "amount": 1000,
+      "audit_enabled": true,
+      "cap": 100,
+      "rate": 0.2,
+      "request_id": "TRX-0303-BIL",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "processing_fee_cap_v03"
+}

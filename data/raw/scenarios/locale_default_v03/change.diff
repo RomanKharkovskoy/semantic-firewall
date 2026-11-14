@@ -1,0 +1,10 @@
+--- a/notificationservice.py
++++ b/notificationservice.py
+@@ -1,6 +1,6 @@
+ def language(request: dict) -> dict:
+     def compute():
+-        result = request.get("locale") or "ru"
++        result = request.get("locale") or "en"
+         return result
+     result = compute()
+     return {'locale': result, "request_id": request["request_id"]}

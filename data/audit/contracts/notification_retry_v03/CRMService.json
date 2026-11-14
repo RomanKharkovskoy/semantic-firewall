@@ -1,0 +1,36 @@
+{
+  "consumer": "CRMService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "continue": false
+    },
+    {
+      "continue": true
+    },
+    {
+      "continue": true
+    }
+  ],
+  "requests": [
+    {
+      "already_sent": true,
+      "audit_enabled": false,
+      "request_id": "TRX-0301-NOT",
+      "use_result": true
+    },
+    {
+      "already_sent": false,
+      "audit_enabled": true,
+      "request_id": "TRX-0302-NOT",
+      "use_result": true
+    },
+    {
+      "already_sent": true,
+      "audit_enabled": true,
+      "request_id": "TRX-0303-NOT",
+      "use_result": false
+    }
+  ],
+  "scenario_id": "notification_retry_v03"
+}

@@ -1,0 +1,39 @@
+{
+  "consumer": "SalesAnalyticsService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "observed": "PAID",
+      "reference": "TRX-0201-ORD"
+    },
+    {
+      "observed": "PENDING",
+      "reference": "TRX-0202-ORD"
+    },
+    {
+      "observed": "PENDING",
+      "reference": "TRX-0203-ORD"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "captured": true,
+      "request_id": "TRX-0201-ORD",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "captured": false,
+      "request_id": "TRX-0202-ORD",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "captured": false,
+      "request_id": "TRX-0203-ORD",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "order_status_name_v02"
+}

@@ -1,0 +1,69 @@
+{
+  "consumer": "CheckoutService",
+  "contract_schema_version": 1,
+  "expected_from_old_provider": [
+    {
+      "route_prefix": "l"
+    },
+    {
+      "route_prefix": "l"
+    },
+    {
+      "route_prefix": "l"
+    }
+  ],
+  "requests": [
+    {
+      "audit_enabled": true,
+      "items": [
+        {
+          "score": 8,
+          "sku": "L1",
+          "title": "Omega"
+        },
+        {
+          "score": 10,
+          "sku": "L2",
+          "title": "Alfa"
+        }
+      ],
+      "request_id": "TRX-0201-CAT",
+      "use_result": false
+    },
+    {
+      "audit_enabled": false,
+      "items": [
+        {
+          "score": 5,
+          "sku": "L3",
+          "title": "Alfa"
+        },
+        {
+          "score": 9,
+          "sku": "L4",
+          "title": "Beta"
+        }
+      ],
+      "request_id": "TRX-0202-CAT",
+      "use_result": true
+    },
+    {
+      "audit_enabled": true,
+      "items": [
+        {
+          "score": 4,
+          "sku": "L5",
+          "title": "Cyan"
+        },
+        {
+          "score": 1,
+          "sku": "L6",
+          "title": "Amber"
+        }
+      ],
+      "request_id": "TRX-0203-CAT",
+      "use_result": true
+    }
+  ],
+  "scenario_id": "catalog_rank_v02"
+}
